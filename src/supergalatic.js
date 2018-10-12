@@ -1,11 +1,10 @@
 export class GalaticAge {
-    constructor(year){
-        this.year = year;
-        
+    constructor(year) {
+    this.year = year;
     }
     findYear(){
-        let newDate = new Date(this.year);
-        let newYear = newDate.getFullYear();
+        let newGalaticYear = new Date(this.year);
+        let newYear = newGalaticYear.getFullYear();
         return newYear;
     }
     findMercury(){
