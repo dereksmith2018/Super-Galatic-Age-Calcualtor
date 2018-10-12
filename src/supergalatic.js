@@ -1,6 +1,7 @@
 export class GalaticAge {
     constructor(year) {
     this.year = year;
+    
     }
     findYear(){
         let newGalaticYear = new Date(this.year);
@@ -10,7 +11,9 @@ export class GalaticAge {
     findMercury(){
         let newMercury = new Date(this.year);
         let newMercuryAge = newMercury.getFullYear();
-        let getAge = parseInt(newMercuryAge * 30 / 87.6);
+        console.log(newMercuryAge * 30 / 87.6);
+        let getAge = newMercuryAge * 30 / 87.6;
+        
         return getAge;
     }
 }
