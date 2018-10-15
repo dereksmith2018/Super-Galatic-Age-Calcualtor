@@ -15,6 +15,10 @@ $(document).ready(function() {
         $("#resultAgeTwo").text(newUserAge.findVenus());
         $("#resultAgeThree").text(newUserAge.findMars());
         $("#resultAgeFour").text(newUserAge.findJupiter());
+        $('#timeleftMercury').text(newUserAge.timeLeftMercury());
+        $('#timeleftVenus').text(newUserAge.timeLeftVenus());
+        $('#timeleftMars').text(newUserAge.timeLeftMars());
+        $('#timeleftJupiter').text(newUserAge.timeLeftJupiter());
         
        
         
