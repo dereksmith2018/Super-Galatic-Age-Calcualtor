@@ -6,11 +6,11 @@ import './styles.css';
 
 $(document).ready(function() {
     $("form#spaceAge").submit(function(event){
-        $("result").text('');
+        // $("result").text("");
         event.preventDefault();
-        const userAge = parseInt($("#numberInput"));
-        let newUserAge = new GalaticAge(userAge);
-        console.log(newUserAge.findMercury());
+        let age = parseInt($("#numberInput").val());
+        let newUserAge = new GalaticAge(age);
+        console.log(newUserAge);
         $("#resultAgeOne").text(newUserAge.findMercury());
         $("#resultAgeTwo").text(newUserAge.findVenus());
         $("#resultAgeThree").text(newUserAge.findMars());
