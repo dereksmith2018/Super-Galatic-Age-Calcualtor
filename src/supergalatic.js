@@ -14,6 +14,7 @@ export class GalaticAge {
         return newYear;
     }
     findMercury(){
+        let age = 30;
         let mercuryAge = (365 * age) / 87.6;
         return mercuryAge;
         // const mercury = ;
@@ -25,14 +26,17 @@ export class GalaticAge {
         // return getAge;
     }
     findVenus(){
+        let age = 30;
         let venusAge = (365 * age) / 224.7;
         return venusAge;
     }
     findMars(){
+        let age = 30;
         let marsAge = (365 * age) / 687;
         return marsAge;
     }
     findJupiterAge() {
+        let age = 30;
         let jupiterAge = (365 * age) / 4332.6;
         return jupiterAge;
       

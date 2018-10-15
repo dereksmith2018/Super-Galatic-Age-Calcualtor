@@ -5,15 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-    $("#formDate").submit(function(event){
+    $("form#spaceAge").submit(function(event){
+        $("result").text('');
         event.preventDefault();
-        // let years = $("#date").val();
-        let userAge = $("#yearsOld");
-        // let newYear = new GalaticAge(years);
+        const userAge = parseInt($("#numberInput"));
         let newUserAge = new GalaticAge(userAge);
         console.log(newUserAge.findMercury());
-        // $("#resultYear").text(newYear.findYear());
-        $("#resultAge").text(newUserAge.findMercury());
+        $("#resultAgeOne").text(newUserAge.findMercury());
+        $("#resultAgeTwo").text(newUserAge.findVenus());
+        $("#resultAgeThree").text(newUserAge.findMars());
+        $("#resultAgeFour").text(newUserAge.findJupiterAge());
         
        
         
