@@ -1,10 +1,11 @@
 export class GalaticAge {
     constructor(year, age) {
     this.year = year;
-    this.mercuryAge = //365 * age / 87.6
-    this.venusAge = // 365 * age / 224.7
-    this.marsAge = //365 * age / 687
-    this.jupiterAge = //365 * age / 4332.6
+    this.age = age;
+    // this.mercuryAge = 365 * age / 87.6;
+    // this.venusAge =  365 * age / 224.7;
+    // this.marsAge = 365 * age / 687;
+    // this.jupiterAge = 365 * age / 4332.6;
   
     }
     findYear(){
@@ -13,7 +14,8 @@ export class GalaticAge {
         return newYear;
     }
     findMercury(){
-        return
+        let mercuryAge = (365 * age) / 87.6;
+        return mercuryAge;
         // const mercury = ;
         // let newMercury = new Date(this.year);
         // let newMercuryAge = newMercury.getFullYear();
@@ -23,13 +25,18 @@ export class GalaticAge {
         // return getAge;
     }
     findVenus(){
-        return ;
+        let venusAge = (365 * age) / 224.7;
+        return venusAge;
     }
     findMars(){
-        return ;
+        let marsAge = (365 * age) / 687;
+        return marsAge;
     }
     findJupiterAge() {
-        return ;
+        let jupiterAge = (365 * age) / 4332.6;
+        return jupiterAge;
+      
+        
     }
     
 }
