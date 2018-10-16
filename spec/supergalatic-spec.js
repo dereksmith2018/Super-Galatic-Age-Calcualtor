@@ -34,19 +34,19 @@ describe('GalaticAge', function(){
     const jupiterAge = new GalaticAge (18);
     expect(jupiterAge.timeLeftJupiter()).toEqual(5);
   });
-  it('return the weight of the person on the planet', function(){
+  it('return the weight of the person on the planet mercury', function(){
     const mercuryWeight= new PlanetWeight (125);
     expect(mercuryWeight.gravityMercury()).toEqual(47 + " lbs");
   })
-  it('return the weight of the person on the planet', function(){
+  it('return the weight of the person on the planet venus', function(){
     const venusWeight = new PlanetWeight (125);
     expect(venusWeight.gravityVenus()).toEqual(113 + " lbs");
   })
-  it('returnn the weight of the person on the planet', function(){
+  it('returnn the weight of the person on the planet mars', function(){
     const marsWeight = new PlanetWeight (125);
     expect(marsWeight.gravityMars()).toEqual(47 + " lbs");
   })
-  it('return the weight of the person on the planet', function(){
+  it('return the weight of the person on the planet jupiter', function(){
     const jupiterWeight = new PlanetWeight (125);
     expect(jupiterWeight.gravityJupiter()).toEqual(31500 + " lbs");
   })
