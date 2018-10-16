@@ -64,7 +64,7 @@ export class GalaticAge {
         return newWeight + " lbs";
     }
     gravityJupiter(){
-        let newWeight = Math.floor(this.weight * 252 );
+        let newWeight = Math.floor(this.weight * 2.4 );
         return newWeight + " lbs";
     }
 }

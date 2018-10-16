@@ -13,3 +13,12 @@
     font-weight: bold;
     font-style: italic;
   }
+  .green{
+    color: darkred;
+    align-content: center;
+  }
+  #washington{
+    align: middle;
+    width:30px;
+    height:24px;
+  }

@@ -48,6 +48,6 @@ describe('GalaticAge', function(){
   })
   it('return the weight of the person on the planet jupiter', function(){
     const jupiterWeight = new PlanetWeight (125);
-    expect(jupiterWeight.gravityJupiter()).toEqual(31500 + " lbs");
+    expect(jupiterWeight.gravityJupiter()).toEqual(300 + " lbs");
   })
 });
