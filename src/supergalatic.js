@@ -46,5 +46,31 @@ export class GalaticAge {
         let timeJupiter = Math.floor((365 * 80) / 4332.6) - newUserAge;
         return timeJupiter;
     }
-    
 }
+   export class PlanetWeight {
+        constructor(weight) {
+        this.weight = weight;
+    }
+    gravityMercury(){
+        let newWeight = Math.floor(this.weight * .38 );
+        return newWeight + " lbs";
+    }
+    gravityVenus(){
+        let newWeight = Math.floor(this.weight * .91 );
+        return newWeight + " lbs";
+    }
+    gravityMars(){
+        let newWeight = Math.floor(this.weight * .38 );
+        return newWeight + " lbs";
+    }
+    gravityJupiter(){
+        let newWeight = Math.floor(this.weight * 252 );
+        return newWeight + " lbs";
+    }
+}
+    
+
+// mercury gravity 38% of earth
+//venus gravity 91% of earth
+//mars gravity 38%
+//jupiter gravity 252%

@@ -8,22 +8,37 @@
     <h1 id="jumbo" class="jumbotron">Super Galatic Age Calculator</h1>
     <form id="spaceAge">
       <div class="form-group">
-        <label for="phrase">Enter a number: </label>
+        <label for="phrase"><span id="makeBig">Enter your age to see how old you would be on the cycle of planet:</span> </label>
         <input id="numberInput" type="text">
+      </div>
+      <div class="form-group">
+        <label for="weight"><span id="makeBig">Enter a your weight to see how much you would weigh(lbs):</span> </label>
+        <input id="weightInput" type="text">
       </div>
 
       <button id="newAge" type="submit" class="btn btn-success">List age in spacetime:</button>
     </form>
+    <style>
+      .newspaper{
+      column-count: 4;
+      }
+    </style>
+    <div class= "newspaper">
     <h3>You are on this old on Mercury:<p id="resultAgeOne"></p></h3>
-    <h3>You have this many years left to live on this planet:<p id="timeleftMercury"></p></h3>
+    <h3>You have this many years left to live on this planet (Human avg - 80 years old):<p id="timeleftMercury"></p></h3>
+    <h3>You would weigh:<p id="resultWeightMercury"></p></h3>
     <hr>
     <h3>You are on this old on Venus:<p id="resultAgeTwo"></p></h3>
-    <h3>You have this many years left to live on this planet:<p id="timeleftVenus"></p></h3>
+    <h3>You have this many years left to live on this planet (human avg - 80 years old):<p id="timeleftVenus"></p></h3>
+    <h3>You would weigh:<p id="resultWeightVenus"></p></h3>
     <hr>
     <h3>You are on this old on Mars:<p id="resultAgeThree"></p></h3>
-    <h3>You have this many years left to live on this planet:<p id="timeleftMars"></p></h3>
+    <h3>You have this many years left to live on this planet (human avg - 80 years old):<p id="timeleftMars"></p></h3>
+    <h3>You would weigh:<p id="resultWeightMars"></p></h3>
     <hr>
     <h3>You are on this old on Jupiter:<p id="resultAgeFour"></p></h3>
-    <h3>You have this many years left to live on this planet:<p id="timeleftJupiter"></p></h3>
+    <h3>You have this many years left to live on this planet (human avg - 80 years old):<p id="timeleftJupiter"></p></h3>
+    <h3>You would weigh:<p id="resultWeightJupiter"></p></h3>
+  </div>
   </body>
    

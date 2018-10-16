@@ -9,3 +9,7 @@
     background-image: linear-gradient(to bottom right, rgb(126, 6, 6), yellow);
 
   }
+  #makeBig{
+    font-weight: bold;
+    font-style: italic;
+  }

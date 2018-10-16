@@ -1,4 +1,4 @@
-import { GalaticAge } from '../src/supergalatic.js';
+import { GalaticAge, PlanetWeight } from '../src/supergalatic.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,6 +8,8 @@ $(document).ready(function() {
     $("form#spaceAge").submit(function(event){
         // $("result").text("");
         event.preventDefault();
+        let weight = parseInt($("#weightInput").val());
+        let newWeight = new PlanetWeight(weight);
         let age = parseInt($("#numberInput").val());
         let newUserAge = new GalaticAge(age);
         // console.log(newUserAge);
@@ -19,6 +21,12 @@ $(document).ready(function() {
         $('#timeleftVenus').text(newUserAge.timeLeftVenus());
         $('#timeleftMars').text(newUserAge.timeLeftMars());
         $('#timeleftJupiter').text(newUserAge.timeLeftJupiter());
+        $('#resultWeightMercury').text(newWeight.gravityMercury());
+        $('#resultWeightVenus').text(newWeight.gravityVenus());
+        $('#resultWeightMars').text(newWeight.gravityMars());
+        $('#resultWeightJupiter').text(newWeight.gravityJupiter());
+
+
         
        
         
